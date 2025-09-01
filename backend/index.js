@@ -2,6 +2,9 @@
 import app from "./app.js";
 import "./database.js";
 import { config } from "./src/config.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Creo una función
 // que se encarga de ejecutar el servidor
