@@ -20,7 +20,7 @@ export const validateAuthToken = (allowedUserTypes = []) => {
       const decoded = jsonwebtoken.verify(authToken, config.JWT.secret);
 
       //Almacenar los datos del usuario en un request
-      req.user = decoded;screenLeft
+      req.user = decoded;
 
       //Verificar el rol
       if (!allowedUserTypes.includes(decoded.userType)) {
